@@ -73,7 +73,7 @@
 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         animation-name: fadeIn;
-        animation-duration: 6s;
+        animation-duration: 2s;
         animation-fill-mode: forwards;
       }
 
@@ -85,13 +85,29 @@
         transform: translate(-50%, -50%);
       }
       @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}      
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .skillset {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 65px;
+      }
+      .skillset img {
+        width: 50%;
+        height: auto;
+        margin-right: 25px;
+        border-radius: 0%;
+      }
+      .skillset p {
+        margin: 0;
+        font-size: 15px;
+      }
     </style>
   </head>
   <body>
@@ -105,13 +121,32 @@
     </section>
 
     <section>
-      <h2>Work</h2>
-      <p>I've made a bot for a development server called Supernatural. The bot is a simple moderation / welcome message bot as requested.</p>
-      <a class="invite-button" href="https://discord.gg/GnkQnNTGJG" data-text="Supernatural Discord"> </a>
-    </section>
-
-    <footer>
-      <p>&copy; 2023 NeonSensei#9137</p>
-    </footer>
-  </body>
-</html>
+      <h2>Skillset</h2>
+      <pg>The following are images of some of the things I can create, this isn't all of my skills, just the few I wanted seen.</pg>
+      <div class="skillset">
+        
+        <div style="display: flex; justify-content: center;">
+          <div style="margin: 93px;">
+            <img src="https://cdn.discordapp.com/attachments/1069344333666467914/1078583644282691605/image.png" alt="Python">
+            <p>Slash Commands</p>
+          </div>
+          <div style="margin: 20px;">
+            <img src="https://cdn.discordapp.com/attachments/1069344333666467914/1078586886928470046/image.png" alt="Luau">
+            <p>Modal Interactions</p>
+          </div>
+          
+          </div>
+        </div>
+      </section>    
+      
+      <section>
+        <h2>Clients</h2>
+        <p>I've made a bot for a development server called Supernatural. The bot is a simple moderation / welcome message bot as requested.</p>
+        <a class="invite-button" href="https://discord.gg/GnkQnNTGJG" data-text="Supernatural Discord"> </a>
+      </section>
+  
+      <footer>
+        <p>&copy; 2023 NeonSensei#9137</p>
+      </footer>
+    </body>
+  </html>      
