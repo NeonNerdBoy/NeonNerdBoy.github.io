@@ -70,7 +70,11 @@
 
       .invite-button:hover {
         background-color: rgba(62, 142, 65, 0.9); /* change hover background color */
+
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add box-shadow on hover */
+        animation-name: fadeIn;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
       }
 
       .invite-button:before { /* create pseudo-element for text */
@@ -80,6 +84,14 @@
         left: 50%;
         transform: translate(-50%, -50%);
       }
+      @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}      
     </style>
   </head>
   <body>
