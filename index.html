@@ -55,7 +55,7 @@
       .invite-button {
         display: block;
         margin: 0 auto;
-        background-color: #4CAF50;
+        background-color: rgba(76, 175, 80, 0.7); /* semi-transparent background */
         color: #fff;
         border: none;
         padding: 10px 20px;
@@ -64,11 +64,21 @@
         border-radius: 5px;
         text-decoration: none;
         margin-top: 20px;
+        position: relative; /* add position relative */
+        transition: all 0.3s ease-out; /* add transition */
       }
 
-      
       .invite-button:hover {
-        background-color: #3e8e41;
+        background-color: rgba(62, 142, 65, 0.9); /* change hover background color */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add box-shadow on hover */
+      }
+
+      .invite-button:before { /* create pseudo-element for text */
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     </style>
   </head>
@@ -85,7 +95,7 @@
     <section>
       <h2>Work</h2>
       <p>I've made a bot for a development server called Supernatural. The bot is a simple moderation / welcome message bot as requested.</p>
-      <a class="invite-button" href="https://discord.gg/GnkQnNTGJG"> Supernatural Discord</a>
+      <a class="invite-button" href="https://discord.gg/GnkQnNTGJG" data-text="Supernatural Discord"> </a>
     </section>
 
     <footer>
@@ -93,4 +103,3 @@
     </footer>
   </body>
 </html>
-
